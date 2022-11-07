@@ -109,7 +109,7 @@ public class UploadController {
 	                    offset,
 	                    length
 	                )
-	                .log()
+//	                .log()
 	                .map(e -> ResponseEntity
 	                    .status(NO_CONTENT)
 	                    .header("Access-Control-Expose-Headers", "Location, Tus-Resumable")

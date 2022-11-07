@@ -22,7 +22,7 @@ public class ServerConfiguration {
     public Path fileDirectory() throws IOException {
         final Path writeDirectoryPath = Paths.get(fileDirectory);
 
-        log.debug("Files path: {}, created: {}", writeDirectoryPath, Files.exists(writeDirectoryPath));
+//        log.debug("Files path: {}, created: {}", writeDirectoryPath, Files.exists(writeDirectoryPath));
         if (!Files.exists(writeDirectoryPath)) {
             Files.createDirectories(writeDirectoryPath);
         }
